@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logan Johnson | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav>
+            <!-- TODO: Add your name or logo here -->
+            <h1>Logan Johnson</h1>
+
+            <!-- TODO: Add navigation links (anchor tags linking to sections below) -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero">
+        <!-- TODO: Add a short intro line about yourself -->
+        <h2>Hi, I’m Logan — a Computer Engineer passionate about hardware, software, and connectivity.</h2>
+
+        <!-- TODO: Add a call-to-action button (like "View My Work") -->
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <!-- TODO: Add a short bio or paragraph -->
+        <p>
+            <!-- Example: -->
+            I’m a recent Virginia Tech graduate in Computer Engineering, with hands-on experience in FPGA design, embedded systems, and networking. 
+            I love building projects that connect hardware and software.
+        </p>
+
+        <!-- TODO: Optionally add a profile photo -->
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Logan Johnson">
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- TODO: Create a few project cards (each with a title, description, and link) -->
+        <div class="project-list">
+            <div class="project-card">
+                <h3>FPGA Pong Game</h3>
+                <p>Two-player Pong game using VGA signal generation and SystemVerilog.</p>
+                <a href="https://github.com/yourusername/fpga-pong" target="_blank">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>IoT Motion Sensor</h3>
+                <p>Arduino R4 WiFi motion sensor integrated with Alexa-connected devices.</p>
+                <a href="https://github.com/yourusername/iot-motion-sensor" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- TODO: Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <!-- TODO: Create a contact form that connects to your Flask route -->
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <!-- TODO: Add copyright -->
+        <p>&copy; 2025 Logan Johnson</p>
+
+        <!-- TODO: Add social media links -->
+        <div class="socials">
+            <a href="https://github.com/techieboy11" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/logan-johnson-vt" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
