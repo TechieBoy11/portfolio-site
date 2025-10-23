@@ -79,6 +79,7 @@ nav ul li a:hover {
 #hero h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #ffeb3b;
 }
 
 .btn {
@@ -128,7 +129,7 @@ section h2 {
 #about img {
   display: block;
   margin: 2rem auto;
-  width: 150px;
+  width: 350px;
   border-radius: 50%;
 }
 
@@ -138,7 +139,7 @@ section h2 {
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
 }
 
