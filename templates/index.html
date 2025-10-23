@@ -81,16 +81,18 @@
     </section>
 
     <!-- ================= CONTACT SECTION ================= -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
-
-        <!-- TODO: Create a contact form that connects to your Flask route -->
-        <form action="/contact" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+        <form action="/contact" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br>
             <button type="submit">Send</button>
         </form>
+    
+        {% if success %}
+        <p style="text-align:center; color: green;">Thanks for reaching out, I'll get back to you soon!</p>
+        {% endif %}
     </section>
 
     <!-- ================= FOOTER ================= -->
