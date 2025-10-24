@@ -8,4 +8,6 @@
 * python -m venv venv
 * venv\Scripts\activate
 * pip install flask
+* pip install Flask-Mail
 * python app.py
+* 
