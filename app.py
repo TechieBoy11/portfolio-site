@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
+from dotenv import load_dotenv
 import os
 
+load_dotenv()
 app = Flask(__name__)
 
 # Email configuration (pulled from environment variables)
